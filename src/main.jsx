@@ -1,6 +1,6 @@
+import { render } from '@czechitas/render'
 import { App } from './components/App'
-import { render } from './utilities/render'
 
 const root = document.querySelector('#root')
 
-render(root, <App />)
+root.innerHTML = render(<App />)
