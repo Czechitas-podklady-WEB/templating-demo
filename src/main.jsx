@@ -1,3 +1,7 @@
-const app = document.querySelector('#app')
+import React from 'react'
+import { App } from './components/App'
+import { render } from './utilities/render'
 
-app.innerHTML = 'Ahoj'
+const root = document.querySelector('#root')
+
+render(root, <App />)
