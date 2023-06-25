@@ -6,19 +6,18 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
 	base: '/templating-demo', // Nutno upravit podle názvu repozitáře
-	root: 'src',
+	root: 'src/pages',
 	build: {
-		outDir: '../dist',
+		outDir: '../../dist',
 		rollupOptions: {
-			// input: {
-			// 	main: resolve(__dirname, 'src/index.html'),
-			// 	den: resolve(__dirname, 'src/den.html'),
-			// },
 			input: Object.fromEntries(
 				glob
-					.sync('src/**/*.html')
+					.sync('src/pages/**/*.html')
 					.map((file) => [
-						relative('src', file.slice(0, file.length - extname(file).length)),
+						relative(
+							'src/pages',
+							file.slice(0, file.length - extname(file).length),
+						),
 						fileURLToPath(new URL(file, import.meta.url)),
 					]),
 			),
