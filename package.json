@@ -8,7 +8,7 @@
 		"build": "vite build"
 	},
 	"devDependencies": {
-		"@czechitas/render": "^0.2.0",
+		"@czechitas/render": "^0.3.1",
 		"vite": "^4.3.9"
 	}
 }
