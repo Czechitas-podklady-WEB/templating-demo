@@ -1,0 +1,12 @@
+.add-product {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	max-width: 20rem;
+	margin-inline: auto;
+	text-align: right;
+}
+
+.add-product__title {
+	text-align: center;
+}

@@ -1,7 +1,8 @@
+import { AddProduct } from './AddProduct'
 import { Container } from './Container'
 import { Layout } from './Layout'
 
-export const Day = ({ name, items }) => {
+export const Day = ({ id, name, items }) => {
 	return (
 		<Layout>
 			<Container>
@@ -18,6 +19,7 @@ export const Day = ({ name, items }) => {
 						))}
 					</ul>
 				)}
+				<AddProduct dayId={id} />
 			</Container>
 		</Layout>
 	)
