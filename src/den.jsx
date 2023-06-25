@@ -1,6 +1,6 @@
 import { render } from '@czechitas/render'
-import { Index } from '../components/Index'
+import { Day } from './components/Day'
 
 const root = document.querySelector('#root')
 
-root.innerHTML = render(<Index />)
+root.innerHTML = render(<Day />)
