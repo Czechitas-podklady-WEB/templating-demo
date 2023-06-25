@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-	base: '/templating-demo', // Nutno upravit podle názvu repozitáře
+	base: '/templating-demo/', // Nutno upravit podle názvu repozitáře
 	root: 'src',
 	build: {
 		outDir: '../dist',
