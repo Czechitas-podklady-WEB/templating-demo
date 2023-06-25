@@ -1,5 +1,6 @@
 import { AddProduct } from './AddProduct'
 import { Container } from './Container'
+import './Day.css'
 import { Layout } from './Layout'
 
 export const Day = ({ id, name, items }) => {
@@ -13,8 +14,16 @@ export const Day = ({ id, name, items }) => {
 					<ul>
 						{items.map((item) => (
 							<li key={item.id}>
-								{item.done ? '✅' : '❌'} {item.product} ({item.amount}{' '}
-								{item.unit})
+								<button
+									className="day__action"
+									data-id={item.id}
+									data-done={item.done}
+								>
+									{item.done ? '✅' : '❌'}{' '}
+									<span className="day__product">
+										{item.product} ({item.amount} {item.unit})
+									</span>
+								</button>
 							</li>
 						))}
 					</ul>

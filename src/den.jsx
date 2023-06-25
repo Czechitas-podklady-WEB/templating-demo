@@ -37,3 +37,23 @@ document
 		})
 		window.location.reload()
 	})
+
+document.querySelectorAll('.day__action').forEach((button) => {
+	button.addEventListener('click', async () => {
+		const done = button.dataset.done === 'true'
+		await fetch(
+			`https://nakupy.kodim.app/api/me/week/${id}/items/${button.dataset.id}`,
+			{
+				method: 'PATCH',
+				headers: {
+					'Content-Type': 'application/json',
+					Authorization: `Bearer ${token}`,
+				},
+				body: JSON.stringify({
+					done: !done,
+				}),
+			},
+		)
+		window.location.reload()
+	})
+})

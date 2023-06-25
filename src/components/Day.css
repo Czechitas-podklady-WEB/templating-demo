@@ -1,0 +1,11 @@
+.day__action {
+	border: none;
+	background-color: transparent;
+	font-size: inherit;
+	padding: 0;
+	cursor: pointer;
+}
+
+.day__action:hover .day__product {
+	text-decoration: underline;
+}
