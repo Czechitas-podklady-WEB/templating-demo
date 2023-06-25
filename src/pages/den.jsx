@@ -1,5 +1,5 @@
 import { render } from '@czechitas/render'
-import { Day } from './components/Day'
+import { Day } from '../components/Day'
 
 const root = document.querySelector('#root')
 
