@@ -15,7 +15,7 @@ export const Header = () => {
 						{' '}
 						<a
 							className="header__navigation-link"
-							href="/templating-demo/kontakt/"
+							href="/templating-demo/kontakt/zkouska/"
 						>
 							Kontakt
 						</a>{' '}
