@@ -1,0 +1,13 @@
+.footer {
+	position: relative;
+	padding-block: 1rem;
+}
+
+.footer::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background-color: currentColor;
+	opacity: 0.05;
+}

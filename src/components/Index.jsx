@@ -1,11 +1,19 @@
+import { Container } from './Container'
 import { Layout } from './Layout'
 
-export const Index = () => {
+export const Index = ({ lists }) => {
 	return (
-		<div>
-			<Layout>
-				<h1>Vše</h1>
-			</Layout>
-		</div>
+		<Layout>
+			<Container>
+				<h2>Všechny seznamy</h2>
+				<ul>
+					{lists.map((item) => (
+						<li key={item.id}>
+							<a href={`/templating-demo/den.html?id=${item.id}`}>{item.id}</a>
+						</li>
+					))}
+				</ul>
+			</Container>
+		</Layout>
 	)
 }
