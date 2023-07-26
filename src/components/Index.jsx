@@ -9,7 +9,7 @@ export const Index = ({ lists }) => {
 				<ul>
 					{lists.map((item) => (
 						<li key={item.id}>
-							<a href={`/templating-demo/den.html?id=${item.id}`}>{item.id}</a>
+							<a href={`/templating-react-demo/den.html?id=${item.id}`}>{item.id}</a>
 						</li>
 					))}
 				</ul>

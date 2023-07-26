@@ -7,7 +7,7 @@ export const Header = () => {
 			<Container size="wide">
 				<div className="header__content">
 					<h1 className="header__brand">
-						<a className="header__brand-link" href="/templating-demo/">
+						<a className="header__brand-link" href="/templating-react-demo/">
 							🏠 Templating demo
 						</a>
 					</h1>
@@ -15,7 +15,7 @@ export const Header = () => {
 						{' '}
 						<a
 							className="header__navigation-link"
-							href="/templating-demo/kontakt/zkouska/"
+							href="/templating-react-demo/kontakt/zkouska/"
 						>
 							Kontakt
 						</a>{' '}
