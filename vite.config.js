@@ -4,13 +4,14 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
 	base: '/templating-react-demo/', // Nutno upravit podle názvu repozitáře
-	root: 'src',
+	root: 'src/pages',
+	publicDir: '../../public',
 	build: {
-		outDir: '../dist',
+		outDir: '../../dist',
 		emptyOutDir: true,
 		target: 'es2022',
 		rollupOptions: {
-			input: glob.sync('src/**/*.html'),
+			input: glob.sync('src/pages/**/*.html'),
 		},
 	},
 	plugins: [czechitasRenderVitePlugin()],

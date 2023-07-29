@@ -1,6 +1,7 @@
 import { render } from '@czechitas/render'
-import { Day } from './components/Day'
-import { getToken } from './utilities/getToken'
+import { Day } from '../components/Day'
+import '../global.css'
+import { getToken } from '../utilities/getToken'
 
 const token = await getToken()
 

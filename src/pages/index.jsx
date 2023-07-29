@@ -1,6 +1,7 @@
 import { render } from '@czechitas/render'
-import { Index } from './components/Index'
-import { getToken } from './utilities/getToken'
+import { Index } from '../components/Index'
+import '../global.css'
+import { getToken } from '../utilities/getToken'
 
 const token = await getToken()
 
