@@ -1,9 +1,7 @@
 import { render } from '@czechitas/render'
 import { Day } from '../components/Day'
 import '../global.css'
-import { getToken } from '../utilities/getToken'
-
-const token = await getToken()
+import { token } from '../utilities/token'
 
 const parameters = new URLSearchParams(window.location.search)
 const id = parameters.get('id')

@@ -1,9 +1,7 @@
 import { render } from '@czechitas/render'
 import { Index } from '../components/Index'
 import '../global.css'
-import { getToken } from '../utilities/getToken'
-
-const token = await getToken()
+import { token } from '../utilities/token'
 
 const response = await fetch('https://nakupy.kodim.app/api/me/week', {
 	headers: {

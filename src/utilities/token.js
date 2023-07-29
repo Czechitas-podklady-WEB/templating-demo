@@ -1,2 +1,2 @@
-export const getToken = () =>
+export const token =
 	'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3IiOiJGaWxpcENoYWx1cGEiLCJzY3AiOiJhcHAiLCJpYXQiOjE2OTA2NTU1MjV9.GJSuzGjXYZjAMkopeGJ89S9xb6J3xOIQPwBWHhNRU1M'
